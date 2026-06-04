@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Italia Bistro | Book A Table</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #faf9f6; margin: 0; padding: 0; color: #2c1a1a; }
+        nav { background: #4a151b; padding: 20px; text-align: center; border-bottom: 4px solid #d4af37; }
+        nav a { color: #faf9f6; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1rem; }
+        nav a:hover, nav a.active { color: #d4af37; }
+        
+        .container { max-width: 600px; margin: 50px auto; padding: 0 20px; box-sizing: border-box; }
+        .form-box { background: white; padding: 40px; border-radius: 8px; border: 1px solid #ebdcb9; box-shadow: 0 4px 10px rgba(0,0,0,0.02); }
+        h2 { color: #4a151b; margin-top: 0; text-align: center; font-family: 'Georgia', serif; font-size: 2rem; }
+        label { font-weight: bold; display: block; margin-top: 15px; color: #4a151b; }
+        input, select, textarea { width: 100%; padding: 12px; margin: 8px 0 15px 0; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; font-size: 16px; }
+        button { background: #4a151b; color: #d4af37; padding: 14px 28px; border: 1px solid #d4af37; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; width: 100%; transition: 0.2s; }
+        button:hover { background: #d4af37; color: #4a151b; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Our Menu</a>
+        <a href="reservations.html" class="active">Reservations</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <div class="form-box">
+            <h2>Secure Your Table</h2>
+            <p style="text-align: center; color: #666; font-size: 15px; margin-bottom: 25px;">Please submit your booking details and our host will instantly confirm availability.</p>
+            
+            <form onsubmit="alert('Grazie! Your dining reservation request has been securely filed.'); return false;">
+                <label>Full Name</label>
+                <input type="text" placeholder="John Doe" required>
+
+                <label>Email Address</label>
+                <input type="email" placeholder="name@domain.com" required>
+                
+                <label>Number of Guests</label>
+                <input type="number" min="1" max="12" placeholder="e.g., 4" required>
+                
+                <label>Seating Preference</label>
+                <select>
+                    <option value="indoor">Elegant Main Dining Room</option>
+                    <option value="patio">Open-Air Tuscan Patio</option>
+                    <option value="bar">Bar Area / High-Tops</option>
+                </select>
+                
+                <label>Special Requests</label>
+                <textarea rows="3" placeholder="Allergies, high-chairs, birthdays, or anniversary notes..."></textarea>
+                
+                <button type="submit">Send Booking Request</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

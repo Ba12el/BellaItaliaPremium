@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Italia Bistro | Contact Us</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: #faf9f6; margin: 0; padding: 0; color: #2c1a1a; }
+        nav { background: #4a151b; padding: 20px; text-align: center; border-bottom: 4px solid #d4af37; }
+        nav a { color: #faf9f6; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 1.1rem; }
+        nav a:hover, nav a.active { color: #d4af37; }
+        
+        .container { max-width: 900px; margin: 50px auto; padding: 0 20px; box-sizing: border-box; }
+        h2 { color: #4a151b; font-family: 'Georgia', serif; font-size: 2.2rem; text-align: center; margin-bottom: 40px; }
+        
+        .contact-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .info-panel { background: white; border: 1px solid #ebdcb9; border-radius: 8px; padding: 30px; box-shadow: 0 4px 6px rgba(0,0,0,0.01); }
+        .info-panel h3 { color: #4a151b; font-size: 1.3rem; margin-top: 0; border-bottom: 1px solid #ebdcb9; padding-bottom: 5px; }
+        .info-panel p { line-height: 1.6; color: #555; font-size: 15px; }
+        
+        .message-box { background: white; border: 1px solid #ebdcb9; border-radius: 8px; padding: 30px; }
+        label { font-weight: bold; display: block; margin-top: 10px; color: #4a151b; }
+        input, textarea { width: 100%; padding: 12px; margin: 8px 0 15px 0; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; }
+        button { background: #4a151b; color: #d4af37; padding: 14px 28px; border: 1px solid #d4af37; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; transition: 0.2s; }
+        button:hover { background: #d4af37; color: #4a151b; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Our Menu</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="contact.html" class="active">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <h2>Get In Touch With Us</h2>
+        
+        <div class="contact-layout">
+            <!-- Details Panel -->
+            <div class="info-panel">
+                <h3>📍 Location & Details</h3>
+                <p><strong>Address:</strong> 742 Via Del Corso, Little Italy District</p>
+                <p><strong>Phone:</strong> +1 (555) 834-2921</p>
+                <p><strong>Email:</strong> management@bellaitaliabistro.com</p>
+
+                <h3 style="margin-top: 30px;">⏰ Opening Hours</h3>
+                <p><strong>Monday - Thursday:</strong> 4:00 PM - 10:00 PM</p>
+                <p><strong>Friday - Saturday:</strong> 12:00 PM - 11:00 PM</p>
+                <p><strong>Sunday:</strong> 12:00 PM - 9:00 PM</p>
+            </div>
+
+            <!-- Direct Messaging Form Workspace -->
+            <div class="message-box">
+                <h3 style="color:#4a151b; margin-top:0;">✉️ Direct Inquiry</h3>
+                <form onsubmit="alert('Grazie! Your message has been sent successfully.'); return false;">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Jane Smith" required>
+
+                    <label>Your Email Address</label>
+                    <input type="email" placeholder="jane@company.com" required>
+
+                    <label>Your Message</label>
+                    <textarea rows="4" placeholder="Ask about catering, private events, or vendor connections..." required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
